@@ -1,8 +1,8 @@
 import './App.css';
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
@@ -10,7 +10,7 @@ import Experiences from "./pages/Experiences";
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
@@ -21,4 +21,3 @@ const App = () => {
 };
 
 export default App;
-

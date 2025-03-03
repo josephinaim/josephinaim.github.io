@@ -26,12 +26,7 @@ const Experiences = () => (
         <li>Conducted in-person usability testing with product and design teams, translating insights into JIRA tasks.</li>
       </ul>
     </div>
-
-    {/* Contact Section */}
-    <div className="mt-5 p-4 bg-light rounded">
-      <h2 className="fw-semibold">Contact Me</h2>
-      <p>You can reach me at <a href="mailto:jhi002247@gmail.com" className="text-primary">jhi002247@gmail.com</a></p>
-    </div>
+    
   </div>
 );
 

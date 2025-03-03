@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "../components/Footer";
 import { motion } from "motion/react";
 
 const Home = () => {

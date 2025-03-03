@@ -21,3 +21,14 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+
+.linkedin-link {
+  color: #ffffff !important;
+  opacity: 0.5;
+  transition: color 0.3s ease-in-out;
+}
+
+.linkedin-link:hover {
+  color: #ffffff !important;
+  opacity: 0.75;
+}

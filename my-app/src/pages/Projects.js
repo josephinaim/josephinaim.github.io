@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { motion } from "motion/react";
 
 const Projects = () => (
   <div className="container text-center my-5">

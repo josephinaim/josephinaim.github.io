@@ -88,7 +88,6 @@ const Home = () => {
           </ul>
         </motion.div>
       </div>
-      <Footer/>
     </div>
   );
 };

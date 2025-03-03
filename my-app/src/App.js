@@ -6,18 +6,23 @@ import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <Router>
       <NavigationBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experiences" element={<Experiences />} />
-      </Routes>
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experiences" element={<Experiences />} />
+        </Routes>
+      </div>
+      <Footer />
     </Router>
   );
 };
+
 
 export default App;

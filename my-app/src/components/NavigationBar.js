@@ -15,6 +15,7 @@ const NavigationBar = () => {
           <Nav className="ml-auto">
             <Nav.Link href="#/experiences" active={location.hash === "#/experiences"}>Experiences</Nav.Link>
             <Nav.Link href="#/projects" active={location.hash === "#/projects"}>Projects</Nav.Link>
+            <Nav.Link href="#/contact" active={location.hash === "#/contact"}>Contact Me</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/ji-im-a100041b0/" target="_blank" rel="noopener noreferrer" className="linkedin-link">LinkedIn</Nav.Link>
           </Nav>
         </Navbar.Collapse>

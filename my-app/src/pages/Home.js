@@ -13,7 +13,7 @@ const Home = () => {
         >
           Hi, I'm Ji Im.
         </motion.h1>
-        
+
         <motion.p className="lead"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -21,7 +21,17 @@ const Home = () => {
         >
           I'm a software developer passionate about learning and growing. Click through my website to learn more about me!
         </motion.p>
-      
+
+        <motion.a className="btn btn-primary mt-3 lead"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          href="#"
+          onClick={() => window.open('/resume.pdf', '_blank')}
+        >
+          View My Resume
+        </motion.a>
+
         <motion.div className="mt-5 p-4 bg-light text-dark rounded shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

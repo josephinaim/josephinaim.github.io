@@ -32,3 +32,25 @@ footer {
   color: #ffffff !important;
   opacity: 0.75;
 }
+
+.website-brand {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.website-brand::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
+}
+
+.website-brand:hover::after {
+  width: 100%;
+  left: 0;
+}

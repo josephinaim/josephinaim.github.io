@@ -68,6 +68,8 @@ const Home = () => {
                 <li>React Native</li>
                 <li>Node.js</li>
                 <li>Express</li>
+                <li>Expo</li>
+                <li>MUI</li>
               </ul>
             </div>
             <div className="col-md-4">
@@ -79,6 +81,9 @@ const Home = () => {
                 <li>Figma</li>
                 <li>Storybook</li>
                 <li>PostgreSQL</li>
+                <li>Xcode</li>
+                <li>Slack</li>
+                <li>JIRA</li>
               </ul>
             </div>
           </div>
@@ -94,6 +99,7 @@ const Home = () => {
             <li><strong>Choreographer & Dance Teacher</strong>, Filipino Intercultural Society of Drexel University (2021 - 2023)</li>
             <li><strong>Vice President</strong>, Action Team Leading Asian Solidarity/APIDA Caucus (2020 - 2023)</li>
             <li><strong>Performing & Fine Arts Committee Board Member</strong>, Campus Activity Board (2020 - 2023)</li>
+            <li><strong>Professional Chair</strong>, Society of Asian Scientists and Engineers (2019 - 2020)</li>
           </ul>
         </motion.div>
       </div>

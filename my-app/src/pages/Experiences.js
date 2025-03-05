@@ -32,7 +32,7 @@ const Experiences = () => (
     >
       <h2 className="fw-semibold">RightOn Education</h2>
       <p className="text-muted">Full Stack Developer (April 2022 - January 2024)</p>
-      {skillTags(["React", "React Native", "JavaScript", "AWS AppSync", "GraphQL", "Storybook"])}
+      {skillTags(["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook"])}
       <ul className="list-unstyled mt-3">
         <li>Developed and deployed full-stack, responsive web and mobile applications using React, React Native, and JavaScript.</li>
         <li>Integrated AWS AppSync and GraphQL subscriptions to manage real-time data features like leaderboards.</li>
@@ -49,7 +49,7 @@ const Experiences = () => (
     >
       <h2 className="fw-semibold">Framewrk</h2>
       <p className="text-muted">Software Developer (April 2023 - September 2023)</p>
-      {skillTags(["React", "HTML", "CSS", "JIRA", "Usability Testing"])}
+      {skillTags(["React", "React Native", "JavaScript", "HTML", "CSS", "JIRA", "Usability Testing"])}
       <ul className="list-unstyled mt-3">
         <li>Built a mobile app feature with interactive elements to improve user engagement.</li>
         <li>Customized a React web application display using HTML and CSS for improved onboarding.</li>

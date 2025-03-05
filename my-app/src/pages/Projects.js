@@ -46,7 +46,7 @@ const Projects = () => (
     >
       <h2 className="fw-semibold">The Game</h2>
       <p className="text-muted">Card game web application using JavaScript and Node with Express</p>
-      {skillTags(["JavaScript", "Node", "Express", "HTML", "CSS"])}
+      {skillTags(["JavaScript", "Node.js", "Express", "HTML", "CSS"])}
       <ul className="list-unstyled">
         <li>Collaborated with a team to develop an interactive web-based card game.</li>
         <li>Conducted meetings and delegated tasks for efficient milestone completion.</li>

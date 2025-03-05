@@ -21,10 +21,10 @@ const Contact = () => {
   const onSubmit = async (data) => {
     try {
       await emailjs.send(
-        "your_service_id", 
-        "your_template_id", 
+        "service_fp3j41m", 
+        "template_ypacbyj", 
         data, 
-        "your_user_id"
+        "wyDLYFDz9zc4wzuHr"
       );
       alert("Message sent successfully!");
       reset();

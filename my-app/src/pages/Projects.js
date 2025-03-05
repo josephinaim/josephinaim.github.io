@@ -2,6 +2,16 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 
+const skillTags = (skills) => (
+  <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
+    {skills.map((skill, index) => (
+      <span key={index} className="badge bg-primary rounded-pill px-3 py-2">
+        {skill}
+      </span>
+    ))}
+  </div>
+);
+
 const Projects = () => (
   <div className="container text-center my-5">
     <motion.h1 className="display-4 fw-bold"
@@ -20,6 +30,7 @@ const Projects = () => (
     >
       <h2 className="fw-semibold">CampUs</h2>
       <p className="text-muted">Full-stack React Native mobile app using TypeScript and Figma</p>
+      {skillTags(["React Native", "TypeScript", "Jest", "Figma", "Documentation"])}
       <ul className="list-unstyled">
         <li>Built features with a focus on code reliability and conducted unit testing with Jest.</li>
         <li>Created a project plan and software requirements specifications document.</li>
@@ -35,6 +46,7 @@ const Projects = () => (
     >
       <h2 className="fw-semibold">The Game</h2>
       <p className="text-muted">Card game web application using JavaScript and Node with Express</p>
+      {skillTags(["JavaScript", "Node", "Express", "HTML", "CSS"])}
       <ul className="list-unstyled">
         <li>Collaborated with a team to develop an interactive web-based card game.</li>
         <li>Conducted meetings and delegated tasks for efficient milestone completion.</li>
@@ -50,6 +62,7 @@ const Projects = () => (
     >
       <h2 className="fw-semibold">Meteoroids</h2>
       <p className="text-muted">Interactive game using Lua and the LÖVE game engine</p>
+      {skillTags(["Git", "Lua", "LÖVE"])}
       <ul className="list-unstyled">
         <li>Led a team to develop an engaging game targeted at young audiences.</li>
         <li>Designed gameplay rules, visual assets, and player interaction frameworks.</li>

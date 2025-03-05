@@ -13,9 +13,9 @@ const NavigationBar = ({ clearSuccessMessage }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#/experiences" active={location.hash === "#/experiences"}>Experiences</Nav.Link>
-            <Nav.Link href="#/projects" active={location.hash === "#/projects"}>Projects</Nav.Link>
-            <Nav.Link href="#/contact" active={location.hash === "#/contact"} onClick={clearSuccessMessage}>Contact Me</Nav.Link>
+            <Nav.Link href="#/experiences" active={location.pathname === "/experiences"}>Experiences</Nav.Link>
+            <Nav.Link href="#/projects" active={location.pathname === "/projects"}>Projects</Nav.Link>
+            <Nav.Link href="#/contact" active={location.pathname === "/contact"} onClick={clearSuccessMessage}>Contact Me</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/ji-im-a100041b0/" target="_blank" rel="noopener noreferrer" className="linkedin-link">LinkedIn</Nav.Link>
           </Nav>
         </Navbar.Collapse>

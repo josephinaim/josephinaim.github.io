@@ -10,7 +10,7 @@ const schema = yup.object().shape({
   message: yup.string().min(10, "Message must be at least 10 characters").required("Message is required"),
 });
 
-const Contact = () => {
+const Contact = ({ successMessage, setSuccessMessage }) => {
   const {
     register,
     handleSubmit,
@@ -21,12 +21,12 @@ const Contact = () => {
   const onSubmit = async (data) => {
     try {
       await emailjs.send(
-        "service_fp3j41m", 
-        "template_ypacbyj", 
-        data, 
+        "service_fp3j41m",
+        "template_ypacbyj",
+        data,
         "wyDLYFDz9zc4wzuHr"
       );
-      alert("Message sent successfully!");
+      setSuccessMessage("Thank you for reaching out! I will respond as soon as I can.");
       reset();
     } catch (error) {
       console.error("Error sending message:", error);
@@ -37,6 +37,7 @@ const Contact = () => {
   return (
     <div className="container mt-5">
       <h2>Contact Me</h2>
+      {successMessage && <div className="alert alert-success mt-3">{successMessage}</div>}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
           <label className="form-label">Name</label>

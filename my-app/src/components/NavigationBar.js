@@ -15,7 +15,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand href="#/" className="website-brand d-flex align-items-center">
+        <Navbar.Brand href="#/" className="website-brand d-flex align-items-center" onClick={handleNavClick}>
           <img
             src="/favicon.ico"
             alt="Logo"

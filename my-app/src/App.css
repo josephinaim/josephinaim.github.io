@@ -33,24 +33,15 @@ footer {
   opacity: 0.75;
 }
 
-.website-brand {
-  position: relative;
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
+.favicon-icon {
+  width: 20px; /* Adjust size */
+  height: 20px;
+  margin-right: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.website-brand::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  height: 3px;
-  background-color: #007bff;
-  transition: all 0.3s ease-in-out;
+.website-brand:hover .favicon-icon {
+  opacity: 1;
 }
 
-.website-brand:hover::after {
-  width: 100%;
-  left: 0;
-}

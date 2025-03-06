@@ -15,7 +15,14 @@ const NavigationBar = ({ clearSuccessMessage }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand href="#/" className="website-brand">My Website</Navbar.Brand>
+        <Navbar.Brand href="#/" className="website-brand d-flex align-items-center">
+          <img
+            src="/favicon.ico"
+            alt="Logo"
+            className="favicon-icon"
+          />
+          My Website
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setExpanded(expanded ? false : true)}

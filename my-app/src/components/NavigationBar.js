@@ -21,7 +21,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
             alt="Logo"
             className="favicon-icon"
           />
-          My Website
+          <span className="ms-2">My Website</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

@@ -30,7 +30,7 @@ const Projects = () => (
     >
       <h2 className="fw-semibold">CampUs</h2>
       <p className="text-muted">Full-stack React Native mobile app using TypeScript and Figma</p>
-      {skillTags(["React Native", "TypeScript", "Jest", "Figma", "Documentation"])}
+      {skillTags(["React Native", "TypeScript", "Jest", "Figma", "Expo", "Documentation"])}
       <ul className="list-unstyled">
         <li>Built features with a focus on code reliability and conducted unit testing with Jest.</li>
         <li>Created a project plan and software requirements specifications document.</li>

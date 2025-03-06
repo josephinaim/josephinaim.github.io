@@ -2,6 +2,16 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "motion/react";
 
+const skillTags = (skills) => (
+  <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
+    {skills.map((skill, index) => (
+      <span key={index} className="badge bg-primary rounded-pill px-3 py-2">
+        {skill}
+      </span>
+    ))}
+  </div>
+);
+
 const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -38,6 +48,7 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <h2 className="fw-semibold">Education</h2>
+          {skillTags(["Python", "Java", "SQL", "PostgreSQL", "JavaScript", "Figma", "Documentation"])}
           <p>Bachelor of Science in Computer Science, <strong>Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
         </motion.div>
 
@@ -53,7 +64,6 @@ const Home = () => {
               <ul className="list-unstyled">
                 <li>Python</li>
                 <li>Java</li>
-                <li>Racket</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>SQL</li>
@@ -77,7 +87,6 @@ const Home = () => {
               <ul className="list-unstyled">
                 <li>AWS</li>
                 <li>Git</li>
-                <li>GitHub</li>
                 <li>Figma</li>
                 <li>Storybook</li>
                 <li>PostgreSQL</li>

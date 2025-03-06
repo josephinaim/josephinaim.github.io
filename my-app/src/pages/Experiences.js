@@ -32,7 +32,7 @@ const Experiences = () => (
     >
       <h2 className="fw-semibold">RightOn Education</h2>
       <p className="text-muted">Full Stack Developer (April 2022 - January 2024)</p>
-      {skillTags(["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook"])}
+      {skillTags(["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook", "Xcode", "Slack", "MUI"])}
       <ul className="list-unstyled mt-3">
         <li>Developed and deployed full-stack, responsive web and mobile applications using React, React Native, and JavaScript.</li>
         <li>Integrated AWS AppSync and GraphQL subscriptions to manage real-time data features like leaderboards.</li>

@@ -36,12 +36,10 @@ footer {
 .favicon-icon {
   width: 20px; /* Adjust size */
   height: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .website-brand:hover .favicon-icon {
-  opacity: 1;
+  transform: translateY(-5px); /* Slight upward movement for the container */
 }
 
 

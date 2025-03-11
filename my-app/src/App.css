@@ -44,3 +44,60 @@ footer {
   opacity: 1;
 }
 
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffa0ce' d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffa0ce' d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+.project-link {
+  text-decoration: none; /* Remove the underline from the link */
+}
+
+.project-container {
+  position: relative;
+  background-color: #fff; /* White background for the container */
+  border-radius: 30px; /* Rounded corners for the image and caption container */
+  overflow: hidden; /* Ensures that the image is clipped to the rounded corners */
+}
+
+.project-container:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  transform: translateY(-5px); /* Slight upward movement for the container */
+}
+
+.project-container img {
+  border-bottom: 5px solid #f8f9fa; /* Border between image and caption */
+}
+
+.caption {
+  padding: 0 4px 0 4px; /* Removed padding-top to eliminate the space above the caption */
+}
+
+.caption h5 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem; /* Smaller font size for the heading */
+  margin-bottom: 0.3rem;
+}
+
+.caption p {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem; /* Smaller font size for the description */
+  color: #6c757d; /* Muted text color for the description */
+  margin-bottom: 0;
+}
+
+.slick-prev.slick-arrow, .slick-next.slick-arrow {
+  font-size: 2rem;
+  color: #007bff !important; /* Force color to be applied */
+  background-color: transparent;
+  border: none;
+}
+
+.slick-prev.slick-arrow:hover, .slick-next.slick-arrow:hover {
+  color: #0056b3 !important; /* Darker blue for hover */
+}

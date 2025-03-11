@@ -55,6 +55,7 @@ const Home = () => {
                 <li>Java</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
+                <li>PHP</li>
                 <li>SQL</li>
               </ul>
             </div>
@@ -66,6 +67,7 @@ const Home = () => {
                 <li>React</li>
                 <li>React Native</li>
                 <li>Node.js</li>
+                <li>Wordpress</li>
                 <li>Express</li>
                 <li>Expo</li>
                 <li>MUI</li>

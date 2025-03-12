@@ -113,10 +113,10 @@ const Home = () => {
 
             <h2 className="mt-4">Involvement</h2>
             <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
-              <li><strong>Choreographer & Dance Teacher</strong>, Filipino Intercultural Society of Drexel University (2021 - 2023)</li>
-              <li><strong>Vice President</strong>, Action Team Leading Asian Solidarity/APIDA Caucus (2020 - 2023)</li>
-              <li><strong>Performing & Fine Arts Committee Board Member</strong>, Campus Activity Board (2020 - 2023)</li>
-              <li><strong>Professional Chair</strong>, Society of Asian Scientists and Engineers (2019 - 2020)</li>
+              <li><strong>Choreographer & Dance Teacher</strong>, Filipino Intercultural Society of Drexel University</li>
+              <li><strong>Vice President</strong>, Action Team Leading Asian Solidarity/APIDA Caucus</li>
+              <li><strong>Performing & Fine Arts Committee Board Member</strong>, Campus Activity Board</li>
+              <li><strong>Professional Chair</strong>, Society of Asian Scientists and Engineers</li>
             </ul>
           </motion.div>
         </div>

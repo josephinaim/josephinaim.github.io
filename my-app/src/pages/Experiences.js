@@ -30,7 +30,21 @@ const Experiences = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      <h2 className="fw-semibold">RightOn Education</h2>
+      <h2 className="fw-semibold d-flex justify-content-center align-items-center gap-2">
+        RightOn Education
+        <a
+          href="https://www.linkedin.com/company/righton-education/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="d-flex align-items-center"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/174/174857.png"
+            alt="LinkedIn"
+            className="linkedin-icon"
+          />
+        </a>
+      </h2>
       <p className="text-muted">Full Stack Developer (April 2022 - January 2024)</p>
       {skillTags(["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook", "Xcode", "Slack", "MUI"])}
       <ul className="list-unstyled mt-3">
@@ -47,7 +61,21 @@ const Experiences = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.8 }}
     >
-      <h2 className="fw-semibold">Framewrk</h2>
+      <h2 className="fw-semibold d-flex justify-content-center align-items-center gap-2">
+        Framewrk
+        <a
+          href="https://www.linkedin.com/company/framewrkapp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="d-flex align-items-center"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/174/174857.png"
+            alt="LinkedIn"
+            className="linkedin-icon"
+          />
+        </a>
+      </h2>
       <p className="text-muted">Software Developer (April 2023 - September 2023)</p>
       {skillTags(["React", "React Native", "JavaScript", "HTML", "CSS", "JIRA", "Usability Testing"])}
       <ul className="list-unstyled mt-3">

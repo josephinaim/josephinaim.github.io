@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import '../App.css';
@@ -6,6 +6,20 @@ import '../App.css';
 const NavigationBar = ({ clearSuccessMessage }) => {
   const location = useLocation();
   const [expanded, setExpanded] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = () => {
     setExpanded(false); // Close the navbar when a link is clicked
@@ -13,7 +27,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
   };
 
   return (
-    <Navbar variant="dark" expand="lg" sticky="top" expanded={expanded} style={{ backgroundColor: "#63585E" }}>
+    <Navbar variant={scrolled ? "dark" : "light"} expand="lg" sticky="top" expanded={expanded} className={`custom-navbar ${scrolled ? "scrolled-navbar" : ""}`}>
       <Container>
         <Navbar.Brand href="#/" className="website-brand d-flex align-items-center" onClick={handleNavClick}>
           <img
@@ -21,7 +35,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
             alt="Logo"
             className="favicon-icon"
           />
-          <span className="ms-2">My Website</span>
+          <span className="ms-2">Ji Im</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

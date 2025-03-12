@@ -6,22 +6,28 @@ const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <div className="container text-center my-5 flex-grow-1">
-        <motion.h1 className="display-4 fw-bold"
+        <motion.h1 className="display-4 text-start mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I'm Ji Im.
+          Hi, I'm Ji Im!
         </motion.h1>
 
-        <motion.p className="lead"
+        <motion.p className="lead text-start"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          I'm a software developer passionate about learning and growing. Click through my website to learn more about me!
+          Software developer passionate about learning and growing in everything.
         </motion.p>
+      </div>
 
+      <div className="container">
+        <div className="underline"></div>
+      </div>
+
+      <div className="container text-center my-5 flex-grow-1">
         <motion.a className="btn btn-primary mt-3 lead"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

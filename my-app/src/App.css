@@ -25,43 +25,44 @@ footer {
   text-align: center;
 }
 
-/* Update the button color */
-.btn-primary {
-  background-color: #63585e !important;
-  /* Dark Purple */
-  border-color: #63585e !important;
-}
 
-.btn-primary:hover {
-  background-color: #998da0 !important;
-  /* Light Purple */
-  border-color: #998da0 !important;
-}
-
-/* Update the color for specific headings in Skills section */
-h4.text-primary {
-  color: #63585e !important;
-  /* Dark Purple */
-}
-
-
-.linkedin-link {
-  color: #ffffff !important;
-  opacity: 0.5;
-  transition: color 0.3s ease-in-out;
-}
-
-
-.linkedin-link:hover {
-  color: #ffffff !important;
-  opacity: 0.75;
-}
 
 .favicon-icon {
   width: 20px;
   /* Adjust size */
   height: 20px;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+
+.custom-navbar{
+  border-bottom: 2px solid #63585E; /* Creates a thin underline */
+  transition: border-color 0.3s ease-in-out;
+}
+
+
+.scrolled-navbar {
+  background: #63585E !important; /* Original background color when scrolling */
+  border-bottom: none; /* Removes the thin underline */
+}
+
+.navbar-toggler {
+  border: none !important; /* Removes border around hamburger icon */
+}
+
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    border-bottom: none; /* Removes underline when collapsed */
+  }
+
+  .navbar-collapse {
+    border-bottom: 2px solid #63585E; /* Adds underline only when expanded */
+  }
 }
 
 /* Apply hover effect only on non-touch devices */
@@ -73,6 +74,13 @@ h4.text-primary {
     /* Soft glow effect */
   }
 }
+
+.underline { /* Makes the line span the full width of the container */
+  height: 2px;  /* Adjust the thickness of the line */
+  background-color: #63585E;  /* Line color */
+  margin-top: 10px;
+}
+
 
 .project-title {
   color: #63585E;

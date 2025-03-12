@@ -67,8 +67,7 @@ footer {
     border-bottom: none; /* Removes underline when collapsed */
   }
 
-  .navbar-collapse {
-    border-bottom: 2px solid #63585E; /* Adds underline only when expanded */
+  .navbar-collapse { /* Adds underline only when expanded */
   }
 }
 

@@ -40,17 +40,15 @@ footer {
 }
 
 .home-scrolled-container{
-  border-bottom: none; 
 }
 
 .custom-navbar{
-  
 }
 
 
 .scrolled-navbar {
   background: #63585E !important; /* Original background color when scrolling */
-  border-bottom: none; /* Removes the thin underline */
+  border-bottom: none !important; /* Removes the thin underline */
 }
 
 .navbar-toggler {

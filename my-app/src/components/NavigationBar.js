@@ -31,7 +31,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
       <Container className={`home-container ${scrolled ? "home-scrolled-container" : ""}`}>
         <Navbar.Brand href="#/" className="website-brand d-flex align-items-center" onClick={handleNavClick}>
           <img
-            src="/favicon.ico"
+            src={scrolled ? "/white-favicon.ico" : "/favicon.ico"}
             alt="Logo"
             className="favicon-icon"
           />

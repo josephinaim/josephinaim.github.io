@@ -57,7 +57,7 @@ const Contact = ({ successMessage, setSuccessMessage }) => {
           {errors.message && <p className="text-danger">{errors.message.message}</p>}
         </div>
 
-        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+        <button type="submit" className="btn btn-dark-purple" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>

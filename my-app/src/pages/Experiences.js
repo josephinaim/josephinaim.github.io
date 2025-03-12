@@ -6,7 +6,7 @@ import SkillsTag from "../components/SkillsTag";
 const Experiences = () => (
   <div className="container text-center my-5">
     <motion.h1
-      className="display-4 fw-bold"
+      className="display-4"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -21,7 +21,7 @@ const Experiences = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      <h2 className="fw-semibold d-flex justify-content-center align-items-center gap-2">
+      <h2 className="d-flex justify-content-center align-items-center gap-2">
         RightOn Education
         <a
           href="https://www.linkedin.com/company/righton-education/"
@@ -52,7 +52,7 @@ const Experiences = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.8 }}
     >
-      <h2 className="fw-semibold d-flex justify-content-center align-items-center gap-2">
+      <h2 className="d-flex justify-content-center align-items-center gap-2">
         Framewrk
         <a
           href="https://www.linkedin.com/company/framewrkapp/"

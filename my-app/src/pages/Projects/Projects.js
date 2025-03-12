@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => (
   <div className="container text-center my-5">
-    <motion.h1 className="display-4 fw-bold"
+    <motion.h1 className="display-4"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -31,7 +31,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold project-title">CampUs</h5>
+              <h5 className="project-title">CampUs</h5>
               <p className="text-muted small">Full-stack React Native mobile app using TypeScript and Figma</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold project-title">The Game</h5>
+              <h5 className="project-title">The Game</h5>
               <p className="text-muted small">Card game web application using JavaScript and Node with Express</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold project-title">Meteoroids</h5>
+              <h5 className="project-title">Meteoroids</h5>
               <p className="text-muted small">Interactive game using Lua and the LÖVE game engine</p>
             </div>
           </div>

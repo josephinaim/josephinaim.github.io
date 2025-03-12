@@ -88,8 +88,8 @@ const Home = () => {
           >
             <h2>Experience</h2>
             <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
-              <li><strong>Full Stack Developer</strong>, RightOn Education (2022 - 2024)</li>
-              <li><strong>Software Developer</strong>, Framewrk (2023 - 2023)</li>
+              <li style={{ marginBottom: "1rem" }}><strong>Full Stack Developer</strong> <br/> @ RightOn Education</li>
+              <li style={{ marginBottom: "1rem" }}><strong>Software Developer</strong> <br/> @ Framewrk</li>
             </ul>
 
             <motion.a className="btn btn-dark-purple lead"
@@ -109,7 +109,7 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <h2>Education</h2>
-            <p style={{ fontSize: "0.8rem" }}>Bachelor of Science in Computer Science, <strong>Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
+            <p style={{ fontSize: "0.8rem" }}>Bachelor of Science in Computer Science <br/> <strong>@ Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
 
             <h2 className="mt-4">Involvement</h2>
             <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>

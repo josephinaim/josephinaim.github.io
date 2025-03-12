@@ -6,6 +6,7 @@ body {
   overflow: visible;
   height: auto;
   font-family: 'DM Mono', monospace;
+  background-color: #eee8f7 !important;
 }
 
 #root {
@@ -25,7 +26,7 @@ footer {
 }
 
 .skill-header {
-  color: #6326c0;
+  color: #000;
 }
 
 .favicon-icon {
@@ -36,8 +37,8 @@ footer {
 }
 
 .btn-dark-purple {
-  background-color: #6326c0 !important; /* Dark purple */
-  border-color: #6326c0 !important;
+  background-color: #000 !important; /* Dark purple */
+  border-color: #000 !important;
   color: white !important;
 }
 
@@ -48,7 +49,7 @@ footer {
 
 
 .home-container{
-  border-bottom: 2px solid #6326c0; /* Creates a thin underline */
+  border-bottom: 2px solid #000; /* Creates a thin underline */
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -60,7 +61,7 @@ footer {
 
 
 .scrolled-navbar {
-  background: #6326c0 !important; /* Original background color when scrolling */
+  background: #000 !important; /* Original background color when scrolling */
   border-bottom: none !important; /* Removes the thin underline */
 }
 
@@ -94,7 +95,7 @@ footer {
 
 .underline { /* Makes the line span the full width of the container */
   height: 2px;  /* Adjust the thickness of the line */
-  background-color: #6326c0;  /* Line color */
+  background-color: #000;  /* Line color */
   margin-top: 10px;
 }
 

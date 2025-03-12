@@ -13,7 +13,7 @@ const NavigationBar = ({ clearSuccessMessage }) => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" expanded={expanded}>
+    <Navbar variant="dark" expand="lg" sticky="top" expanded={expanded} style={{ backgroundColor: "#63585E" }}>
       <Container>
         <Navbar.Brand href="#/" className="website-brand d-flex align-items-center" onClick={handleNavClick}>
           <img

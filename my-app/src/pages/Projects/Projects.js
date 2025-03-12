@@ -31,7 +31,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold">CampUs</h5>
+              <h5 className="fw-bold project-title">CampUs</h5>
               <p className="text-muted small">Full-stack React Native mobile app using TypeScript and Figma</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold">The Game</h5>
+              <h5 className="fw-bold project-title">The Game</h5>
               <p className="text-muted small">Card game web application using JavaScript and Node with Express</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Projects = () => (
               style={{ objectFit: 'cover', height: '200px' }}
             />
             <div className="caption mt-2 text-center">
-              <h5 className="fw-bold">Meteoroids</h5>
+              <h5 className="fw-bold project-title">Meteoroids</h5>
               <p className="text-muted small">Interactive game using Lua and the LÖVE game engine</p>
             </div>
           </div>

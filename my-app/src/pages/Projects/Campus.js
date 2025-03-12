@@ -1,20 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const skillTags = (skills) => (
-  <motion.div
-    className="d-flex flex-wrap justify-content-center gap-2 mb-4"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 0.4, duration: 0.8 }}
-  >
-    {skills.map((skill, index) => (
-      <span key={index} className="badge bg-primary rounded-pill px-3 py-2">
-        {skill}
-      </span>
-    ))}
-  </motion.div>
-);
+import SkillsTag from "../../components/SkillsTag";
 
 const Campus = () => (
   <div className="container text-center my-5">
@@ -45,7 +31,7 @@ const Campus = () => (
           </motion.p>
 
           {/* Animated skill tags */}
-          {skillTags(["React Native", "TypeScript", "Jest", "Figma", "Expo", "Documentation"])}
+          <SkillsTag skills={["React Native", "TypeScript", "Jest", "Figma", "Expo", "Documentation"]}/>
 
           <motion.ul
             className="list-unstyled mb-4"

@@ -1,16 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
-
-const skillTags = (skills) => (
-  <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
-    {skills.map((skill, index) => (
-      <span key={index} className="badge bg-primary rounded-pill px-3 py-2">
-        {skill}
-      </span>
-    ))}
-  </div>
-);
+import SkillsTag from "../components/SkillsTag";
 
 const Experiences = () => (
   <div className="container text-center my-5">
@@ -46,7 +37,7 @@ const Experiences = () => (
         </a>
       </h2>
       <p className="text-muted">Full Stack Developer (April 2022 - January 2024)</p>
-      {skillTags(["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook", "Xcode", "Slack", "MUI"])}
+      <SkillsTag skills={["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook", "Xcode", "Slack", "MUI"]}/>
       <ul className="list-unstyled mt-3">
         <li>Developed and deployed full-stack, responsive web and mobile applications using React, React Native, and JavaScript.</li>
         <li>Integrated AWS AppSync and GraphQL subscriptions to manage real-time data features like leaderboards.</li>
@@ -77,7 +68,7 @@ const Experiences = () => (
         </a>
       </h2>
       <p className="text-muted">Software Developer (April 2023 - September 2023)</p>
-      {skillTags(["React", "React Native", "JavaScript", "HTML", "CSS", "JIRA", "Usability Testing"])}
+      <SkillsTag skills={["React", "React Native", "JavaScript", "HTML", "CSS", "JIRA", "Usability Testing"]}/>
       <ul className="list-unstyled mt-3">
         <li>Built a mobile app feature with interactive elements to improve user engagement.</li>
         <li>Customized a React web application display using HTML and CSS for improved onboarding.</li>

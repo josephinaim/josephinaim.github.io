@@ -1,9 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
   display: flex;
   flex-direction: column;
   overflow: visible;
   height: auto;
+  font-family: 'DM Mono', monospace;
 }
 
 #root {
@@ -23,11 +25,32 @@ footer {
   text-align: center;
 }
 
+/* Update the button color */
+.btn-primary {
+  background-color: #63585e !important;
+  /* Dark Purple */
+  border-color: #63585e !important;
+}
+
+.btn-primary:hover {
+  background-color: #998da0 !important;
+  /* Light Purple */
+  border-color: #998da0 !important;
+}
+
+/* Update the color for specific headings in Skills section */
+h4.text-primary {
+  color: #63585e !important;
+  /* Dark Purple */
+}
+
+
 .linkedin-link {
   color: #ffffff !important;
   opacity: 0.5;
   transition: color 0.3s ease-in-out;
 }
+
 
 .linkedin-link:hover {
   color: #ffffff !important;
@@ -35,7 +58,8 @@ footer {
 }
 
 .favicon-icon {
-  width: 20px; /* Adjust size */
+  width: 20px;
+  /* Adjust size */
   height: 20px;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
@@ -43,65 +67,57 @@ footer {
 /* Apply hover effect only on non-touch devices */
 @media (hover: hover) {
   .website-brand:hover .favicon-icon {
-    transform: scale(1.2) rotate(-5deg); /* Slight tilt and scale */
-    filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.3)); /* Soft glow effect */
+    transform: scale(1.2) rotate(-5deg);
+    /* Slight tilt and scale */
+    filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.3));
+    /* Soft glow effect */
   }
 }
 
-
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffa0ce' d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+.project-title {
+  color: #63585E;
 }
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffa0ce' d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
 
 .project-link {
-  text-decoration: none; /* Remove the underline from the link */
+  text-decoration: none;
+  /* Remove the underline from the link */
 }
 
 .project-container {
   position: relative;
-  background-color: #fff; /* White background for the container */
-  border-radius: 30px; /* Rounded corners for the image and caption container */
+  background-color: #fff;
+  /* White background for the container */
+  border-radius: 30px;
+  /* Rounded corners for the image and caption container */
 }
 
 .project-container:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-  transform: translateY(-5px); /* Slight upward movement for the container */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow on hover */
+  transform: translateY(-5px);
+  /* Slight upward movement for the container */
 }
 
 .project-container img {
-  border-bottom: 5px solid #f8f9fa; /* Border between image and caption */
+  border-bottom: 5px solid #f8f9fa;
+  /* Border between image and caption */
 }
 
 .caption {
-  padding: 0 4px 0 4px; /* Removed padding-top to eliminate the space above the caption */
+  padding: 0 4px 0 4px;
+  /* Removed padding-top to eliminate the space above the caption */
 }
 
 .caption h5 {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.2rem; /* Smaller font size for the heading */
+  font-size: 1.2rem;
+  /* Smaller font size for the heading */
   margin-bottom: 0.3rem;
 }
 
 .caption p {
-  font-family: 'Arial', sans-serif;
-  font-size: 0.9rem; /* Smaller font size for the description */
-  color: #6c757d; /* Muted text color for the description */
+  font-size: 0.9rem;
+  /* Smaller font size for the description */
+  color: #6c757d;
+  /* Muted text color for the description */
   margin-bottom: 0;
-}
-
-.slick-prev.slick-arrow, .slick-next.slick-arrow {
-  font-size: 2rem;
-  color: #007bff !important; /* Force color to be applied */
-  background-color: transparent;
-  border: none;
-}
-
-.slick-prev.slick-arrow:hover, .slick-next.slick-arrow:hover {
-  color: #0056b3 !important; /* Darker blue for hover */
 }

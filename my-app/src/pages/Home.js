@@ -39,7 +39,7 @@ const Home = () => {
             <div className="row">
               {/* Programming Languages Column */}
               <div className="col-md-6">
-                <h6 className="text-primary">Programming Languages</h6>
+                <h6 className="skill-header">Programming Languages</h6>
                 <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
                   <li>Python</li>
                   <li>Java</li>
@@ -51,7 +51,7 @@ const Home = () => {
               </div>
               {/* Web Development Column */}
               <div className="col-md-6">
-                <h6 className="text-primary">Web Development</h6>
+                <h6 className="skill-header">Web Development</h6>
                 <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -67,7 +67,7 @@ const Home = () => {
             </div>
             {/* Tools & Platforms Column */}
             <div className="col-md-12">
-              <h6 className="text-primary">Tools & Platforms</h6>
+              <h6 className="skill-header">Tools & Platforms</h6>
               <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
                 <li>AWS</li>
                 <li>Git</li>
@@ -92,7 +92,7 @@ const Home = () => {
               <li><strong>Software Developer</strong>, Framewrk (2023 - 2023)</li>
             </ul>
 
-            <motion.a className="btn btn-primary lead"
+            <motion.a className="btn btn-dark-purple lead"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -109,9 +109,9 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science, <strong>Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
+            <p style={{ fontSize: "0.8rem" }}>Bachelor of Science in Computer Science, <strong>Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
 
-            <h3 className="mt-4">Involvement</h3>
+            <h2 className="mt-4">Involvement</h2>
             <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
               <li><strong>Choreographer & Dance Teacher</strong>, Filipino Intercultural Society of Drexel University (2021 - 2023)</li>
               <li><strong>Vice President</strong>, Action Team Leading Asian Solidarity/APIDA Caucus (2020 - 2023)</li>

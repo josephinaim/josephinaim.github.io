@@ -20,12 +20,13 @@ body {
 
 footer {
   width: 100%;
-  background-color: #f8f9fa;
   padding: 1rem;
   text-align: center;
 }
 
-
+.skill-header {
+  color: #6326c0;
+}
 
 .favicon-icon {
   width: 20px;
@@ -34,8 +35,20 @@ footer {
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
+.btn-dark-purple {
+  background-color: #6326c0 !important; /* Dark purple */
+  border-color: #6326c0 !important;
+  color: white !important;
+}
+
+.btn-dark-purple:hover {
+  background-color: #55002e !important; /* Slightly lighter purple on hover */
+  border-color: #55002e !important;
+}
+
+
 .home-container{
-  border-bottom: 2px solid #63585E; /* Creates a thin underline */
+  border-bottom: 2px solid #6326c0; /* Creates a thin underline */
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -47,7 +60,7 @@ footer {
 
 
 .scrolled-navbar {
-  background: #63585E !important; /* Original background color when scrolling */
+  background: #6326c0 !important; /* Original background color when scrolling */
   border-bottom: none !important; /* Removes the thin underline */
 }
 
@@ -81,13 +94,13 @@ footer {
 
 .underline { /* Makes the line span the full width of the container */
   height: 2px;  /* Adjust the thickness of the line */
-  background-color: #63585E;  /* Line color */
+  background-color: #6326c0;  /* Line color */
   margin-top: 10px;
 }
 
 
 .project-title {
-  color: #63585E;
+  color: #6326c0;
 }
 
 .project-link {

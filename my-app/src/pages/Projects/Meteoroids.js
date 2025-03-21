@@ -4,7 +4,6 @@ import SkillsTag from "../../components/SkillsTag";
 
 const Meteoroids = () => (
   <div className="container my-5">
-    {/* Animated Title */}
     <motion.h1 className="display-4 text-start"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -13,14 +12,12 @@ const Meteoroids = () => (
       Meteoroids
     </motion.h1>
 
-    {/* Project Description Section with Two Columns */}
     <motion.div
       className="row align-items-start mt-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      {/* Left Side: Project Name, Description, and Skill Tags */}
       <div className="col-md-6 text-start">
         <motion.p className="text-muted mb-3"
           initial={{ opacity: 0 }}
@@ -30,15 +27,13 @@ const Meteoroids = () => (
           Interactive game using Lua and the LÖVE game engine
         </motion.p>
 
-        {/* Skill Tags Below Description */}
         <SkillsTag skills={["Git", "Lua", "LÖVE"]} />
       </div>
 
-      {/* Right Side: Bullet Points */}
       <div className="col-md-6">
         <motion.ul
-          className="list-unstyled ps-3"  // Adds left padding for bullets
-          style={{ listStyleType: "disc" }} // Forces bullet points
+          className="list-unstyled ps-3" 
+          style={{ listStyleType: "disc" }} 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
@@ -50,7 +45,6 @@ const Meteoroids = () => (
       </div>
     </motion.div>
 
-    {/* Project Images Section */}
     <motion.div
       className="row row-cols-md-3 justify-content-center mt-4"
       initial={{ opacity: 0 }}

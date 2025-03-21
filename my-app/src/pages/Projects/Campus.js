@@ -4,7 +4,6 @@ import SkillsTag from "../../components/SkillsTag";
 
 const Campus = () => (
   <div className="container my-5">
-    {/* Animated Title */}
     <motion.h1 className="display-4 text-start"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -13,14 +12,12 @@ const Campus = () => (
       CampUs
     </motion.h1>
 
-    {/* Project Description Section with Two Columns */}
     <motion.div
       className="row align-items-start mt-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      {/* Left Side: Project Name, Description, and Skill Tags */}
       <div className="col-md-6 text-start">
         <motion.p className="text-muted mb-3"
           initial={{ opacity: 0 }}
@@ -30,14 +27,12 @@ const Campus = () => (
           Full-stack React Native mobile app using TypeScript and Figma
         </motion.p>
 
-        {/* Skill Tags Below Description */}
         <SkillsTag skills={["React Native", "TypeScript", "Jest", "Figma", "Expo", "Documentation"]} />
       </div>
 
-      {/* Right Side: Bullet Points */}
       <div className="col-md-6">
         <motion.ul
-          className="list-unstyled ps-3"  // Adds left padding for bullets
+          className="list-unstyled ps-3" 
           style={{ listStyleType: "disc" }} 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -50,7 +45,6 @@ const Campus = () => (
       </div>
     </motion.div>
 
-    {/* Project Images Section */}
     <motion.div
       className="row justify-content-center mt-4"
       initial={{ opacity: 0 }}

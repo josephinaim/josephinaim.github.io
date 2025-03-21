@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { motion } from "framer-motion"; // Corrected import for motion
+import { motion } from "framer-motion"; 
 
 const Home = () => {
   return (
@@ -37,7 +37,6 @@ const Home = () => {
           >
             <h2>Skills</h2>
             <div className="row">
-              {/* Programming Languages Column */}
               <div className="col-md-6">
                 <h6 className="skill-header">Programming Languages</h6>
                 <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
@@ -49,7 +48,6 @@ const Home = () => {
                   <li>SQL</li>
                 </ul>
               </div>
-              {/* Web Development Column */}
               <div className="col-md-6">
                 <h6 className="skill-header">Web Development</h6>
                 <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
@@ -65,7 +63,6 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            {/* Tools & Platforms Column */}
             <div className="col-md-12">
               <h6 className="skill-header">Tools & Platforms</h6>
               <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>

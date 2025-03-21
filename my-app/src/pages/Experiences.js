@@ -14,7 +14,6 @@ const Experiences = () => (
       Work Experience
     </motion.h1>
 
-    {/* RightOn Education Experience */}
     <motion.div
       className="mt-5 p-4"
       initial={{ opacity: 0, y: 20 }}
@@ -22,7 +21,6 @@ const Experiences = () => (
       transition={{ delay: 0.3, duration: 0.8 }}
     >
       <div className="row align-items-start">
-        {/* Left Column: Job Name, LinkedIn Icon, Description, Skill Tags */}
         <div className="col-md-6 text-start">
           <h2 className="d-flex align-items-center gap-2">
             RightOn Education
@@ -36,7 +34,7 @@ const Experiences = () => (
                 src="https://cdn-icons-png.flaticon.com/24/174/174857.png"
                 alt="LinkedIn"
                 className="linkedin-icon"
-                style={{ width: "20px", height: "20px" }}  // LinkedIn icon size
+                style={{ width: "20px", height: "20px" }} 
               />
             </a>
           </h2>
@@ -44,7 +42,6 @@ const Experiences = () => (
           <SkillsTag skills={["React", "React Native", "JavaScript", "TypeScript", "Git", "Figma", "AWS", "GraphQL", "Storybook", "Xcode", "Slack", "MUI"]} />
         </div>
 
-        {/* Right Column: Bullet Points */}
         <div className="col-md-6">
           <ul className="list-unstyled ps-3" style={{ listStyleType: "disc" }}>
             <li>Developed and deployed full-stack, responsive web and mobile applications using React, React Native, and JavaScript.</li>
@@ -55,7 +52,6 @@ const Experiences = () => (
       </div>
     </motion.div>
 
-    {/* Framewrk Experience */}
     <motion.div
       className="mt-5 p-4"
       initial={{ opacity: 0, y: 20 }}
@@ -63,7 +59,6 @@ const Experiences = () => (
       transition={{ delay: 0.5, duration: 0.8 }}
     >
       <div className="row align-items-start">
-        {/* Left Column: Job Name, LinkedIn Icon, Description, Skill Tags */}
         <div className="col-md-6 text-start">
           <h2 className="d-flex align-items-center gap-2">
             Framewrk
@@ -77,7 +72,7 @@ const Experiences = () => (
                 src="https://cdn-icons-png.flaticon.com/24/174/174857.png"
                 alt="LinkedIn"
                 className="linkedin-icon"
-                style={{ width: "20px", height: "20px" }}  // LinkedIn icon size
+                style={{ width: "20px", height: "20px" }} 
               />
             </a>
           </h2>
@@ -85,7 +80,6 @@ const Experiences = () => (
           <SkillsTag skills={["React", "React Native", "JavaScript", "HTML", "CSS", "JIRA", "Usability Testing"]} />
         </div>
 
-        {/* Right Column: Bullet Points */}
         <div className="col-md-6">
           <ul className="list-unstyled ps-3" style={{ listStyleType: "disc" }}>
             <li>Built a mobile app feature with interactive elements to improve user engagement.</li>

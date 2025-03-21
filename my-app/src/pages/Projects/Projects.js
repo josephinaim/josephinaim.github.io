@@ -13,10 +13,8 @@ const Projects = () => (
       Projects
     </motion.h1>
 
-    {/* Projects Row */}
     <motion.div className="row mt-5 mb-5 justify-content-center">
 
-      {/* CampUs Project */}
       <motion.div className="col-md-4 mb-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,7 +36,6 @@ const Projects = () => (
         </Link>
       </motion.div>
 
-      {/* The Game Project */}
       <motion.div className="col-md-4 mb-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -60,7 +57,6 @@ const Projects = () => (
         </Link>
       </motion.div>
 
-      {/* Meteoroids Project */}
       <motion.div className="col-md-4 mb-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -22,12 +22,12 @@ const NavigationBar = ({ clearSuccessMessage }) => {
   }, []);
 
   const handleNavClick = () => {
-    setExpanded(false); // Close the navbar when a link is clicked
-    clearSuccessMessage?.(); // Clear success message if provided
+    setExpanded(false); 
+    clearSuccessMessage?.();
   };
 
   return (
-    <Navbar variant={scrolled ? "dark" : "light"} expand="lg" sticky="top" expanded={expanded} className={`custom-navbar ${scrolled ? "scrolled-navbar" : ""}`}>
+    <Navbar variant={scrolled ? "dark" : "light"} expand="lg" sticky="top" expanded={expanded} className={scrolled ? "scrolled-navbar" : ""}>
       <Container className={`home-container ${scrolled ? "home-scrolled-container" : ""}`}>
         <Navbar.Brand href="#/" className="website-brand d-flex align-items-center" onClick={handleNavClick}>
           <img

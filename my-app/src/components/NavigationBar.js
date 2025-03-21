@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
-import '../App.css';
+import '../App.scss';
 
 const NavigationBar = ({ clearSuccessMessage }) => {
   const location = useLocation();

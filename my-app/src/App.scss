@@ -1,12 +1,17 @@
-html,
-body {
+$primary-color: #000;
+$secondary-color: #7A3DDA;
+$background-color: #eee8f7;
+$light-gray: #f8f9fa;
+$muted-text: #6c757d;
+
+html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
   overflow: visible;
   height: auto;
   font-family: 'DM Mono', monospace;
-  background-color: #eee8f7 !important;
+  background-color: $background-color !important;
 }
 
 #root {
@@ -16,13 +21,11 @@ body {
 }
 
 /* App.js */
-
 .main-content {
   flex: 1;
 }
 
-/* Footer.js*/
-
+/* Footer.js */
 footer {
   width: 100%;
   padding: 1rem;
@@ -30,32 +33,38 @@ footer {
 }
 
 /* Home.js */
-
 .skill-header {
-  color: #000;
+  color: $primary-color;
 }
 
 .underline {
   height: 2px;
-  background-color: #000; 
+  background-color: $primary-color;
   margin-top: 10px;
 }
 
-/* NavigationBar.js */
+.details {
+  font-size: 0.8rem;
+}
 
+.experience-item {
+  margin-bottom: 1rem;
+}
+
+/* NavigationBar.js */
 .favicon-icon {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.home-container{
-  border-bottom: 2px solid #000;
+.home-container {
+  border-bottom: 2px solid $primary-color;
   transition: border-color 0.3s ease-in-out;
 }
 
 .scrolled-navbar {
-  background: #000 !important; 
+  background: $primary-color !important;
   border-bottom: none !important;
 }
 
@@ -69,7 +78,7 @@ footer {
 
 @media (max-width: 991px) {
   .custom-navbar {
-    border-bottom: none; 
+    border-bottom: none;
   }
 }
 
@@ -81,22 +90,20 @@ footer {
 }
 
 /* Button */
-
 .btn-dark-purple {
-  background-color: #000 !important; 
-  border-color: #000 !important;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
   color: white !important;
-}
 
-.btn-dark-purple:hover {
-  background-color: #7A3DDA !important; 
-  border-color: #7A3DDA !important;
+  &:hover {
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
 }
 
 /* Projects.js */
-
 .project-title {
-  color: #000;
+  color: $primary-color;
 }
 
 .project-link {
@@ -107,28 +114,28 @@ footer {
   position: relative;
   background-color: #fff;
   border-radius: 30px;
-}
 
-.project-container:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
-}
+  &:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
 
-.project-container img {
-  border-bottom: 5px solid #f8f9fa;
+  img {
+    border-bottom: 5px solid $light-gray;
+  }
 }
 
 .caption {
-  padding: 0 4px 0 4px;
-}
+  padding: 0 4px;
 
-.caption h5 {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
 
-.caption p {
-  font-size: 0.9rem;
-  color: #6c757d;
-  margin-bottom: 0;
+  p {
+    font-size: 0.9rem;
+    color: $muted-text;
+    margin-bottom: 0;
+  }
 }

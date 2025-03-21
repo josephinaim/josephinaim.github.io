@@ -2,10 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion"; 
 
+
 const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
-      <div className="container text-center my-5 ">
+      <div className="container text-center my-5">
         <motion.h1 className="display-4 text-start mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,10 +37,10 @@ const Home = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <h2>Skills</h2>
-            <div className="row">
+            <div className="row details">
               <div className="col-md-6">
                 <h6 className="skill-header">Programming Languages</h6>
-                <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
+                <ul className="list-unstyled">
                   <li>Python</li>
                   <li>Java</li>
                   <li>JavaScript</li>
@@ -50,7 +51,7 @@ const Home = () => {
               </div>
               <div className="col-md-6">
                 <h6 className="skill-header">Web Development</h6>
-                <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
+                <ul className="list-unstyled">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>React</li>
@@ -63,9 +64,9 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-12">
+            <div className="col-md-12 details">
               <h6 className="skill-header">Tools & Platforms</h6>
-              <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
+              <ul className="list-unstyled">
                 <li>AWS</li>
                 <li>Git</li>
                 <li>Figma</li>
@@ -84,9 +85,9 @@ const Home = () => {
             transition={{ delay: 0.9, duration: 0.8 }}
           >
             <h2>Experience</h2>
-            <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
-              <li style={{ marginBottom: "1rem" }}><strong>Full Stack Developer</strong> <br/> @ RightOn Education</li>
-              <li style={{ marginBottom: "1rem" }}><strong>Software Developer</strong> <br/> @ Framewrk</li>
+            <ul className="list-unstyled details">
+              <li className="experience-item"><strong>Full Stack Developer</strong> <br/> @ RightOn Education</li>
+              <li className="experience-item"><strong>Software Developer</strong> <br/> @ Framewrk</li>
             </ul>
 
             <motion.a className="btn btn-dark-purple lead"
@@ -106,10 +107,10 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <h2>Education</h2>
-            <p style={{ fontSize: "0.8rem" }}>Bachelor of Science in Computer Science <br/> <strong>@ Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
+            <p className="details">Bachelor of Science in Computer Science <br/> <strong>@ Drexel University</strong><br />(2019 - 2024, Cum Laude)</p>
 
             <h2 className="mt-4">Involvement</h2>
-            <ul className="list-unstyled" style={{ fontSize: "0.8rem" }}>
+            <ul className="list-unstyled details">
               <li><strong>Choreographer & Dance Teacher</strong>, Filipino Intercultural Society of Drexel University</li>
               <li><strong>Vice President</strong>, Action Team Leading Asian Solidarity/APIDA Caucus</li>
               <li><strong>Performing & Fine Arts Committee Board Member</strong>, Campus Activity Board</li>
@@ -117,8 +118,6 @@ const Home = () => {
             </ul>
           </motion.div>
         </div>
-
-
       </div>
     </div>
   );

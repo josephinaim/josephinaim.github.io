@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion"; 
 
-
 const Home = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
